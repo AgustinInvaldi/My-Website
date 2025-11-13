@@ -21,7 +21,7 @@ export default function About() {
                         ></motion.div>
 
                         <img
-                            src="../../public/profile.jpeg"
+                            src="/profile.jpeg"
                             alt="Foto de Agustín Invaldi"
                             className="w-full h-full object-cover rounded-full border-4 border-white dark:border-[#1b1b1b]"
                         />
