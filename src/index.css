@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For smooth dark mode transition */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default light mode */
+body {
+  @apply bg-white text-gray-900 dark:bg-neutral-900 dark:text-gray-100 antialiased;
+}
+
+@keyframes gradient-motion {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-gradient-motion {
+  animation: gradient-motion 6s ease-in-out infinite;
+}
